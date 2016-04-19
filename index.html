@@ -8,16 +8,19 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="main.js"></script>
+    <script>
+        $(window).load(function () {
+            alert('Window Loaded');
+        });
+
+        $(document).ready(function () {
+            alert('DOM Loaded');
+        });
+    </script>
 </head>
 
 <body>
-        <input type="button" id="button1" value="Click Me">
-    <script>
-            $('#button1').click(function () {
-                alert('JQuery Tutorial');
-            });
-        });
-    </script>
+
 </body>
 
 </html>
