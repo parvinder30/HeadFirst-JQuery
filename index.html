@@ -10,17 +10,14 @@
     <script src="main.js"></script>
     <script>
         $(window).load(function () {
-            alert('Window Loaded');
-        });
-
-        $(document).ready(function () {
-            alert('DOM Loaded');
+            $('#div1').html("Height = " + $('#img1').height() + "<br>" + "Width = " + $('#img1').width())
         });
     </script>
 </head>
 
 <body>
-
+    <div id="div1"></div>
+    <img id="img1" src="01.jpg" alt="Flowers">
 </body>
 
 </html>
